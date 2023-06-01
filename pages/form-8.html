@@ -1,0 +1,28 @@
+<div class="col-md-7">
+
+    <form name="formulario" ng-submit="guardar_datos('8')" novalidate="novalidate">
+
+        <div class="form-group">
+            <label for="nombre" class="control-label">¿Experimentas cambios en tu patrón de sueño, como insomnio o dormir demasiado? </label>
+            <select class="form-control" id="Pr1" ng-model="formData.D8" required="required">
+                <option value="0.25">Mi patrón de sueño es normal  </option>
+                <option value="0.5">A veces tengo problemas para dormir  </option>
+                <option value="0.75">Con frecuencia tengo problemas para dormir  </option>
+                <option value="1.0">Siempre tengo problemas para dormir  </option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="edad" class="control-label">¿Tienes miedo o evitas ciertas situaciones que te generan ansiedad?</label>
+            <select class="form-control" id="Pr2" ng-model="formData.A8" required="required">
+                <option value="0.25">No tengo miedo o evito situaciones</option>
+                <option value="0.5">A veces tengo miedo o evito situaciones </option>
+                <option value="0.75">Con frecuencia tengo miedo o evito situaciones   </option>
+                <option value="1.0">Siempre tengo miedo o evito situaciones  </option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary"> Guardar</button>
+    </form>
+
+</div>

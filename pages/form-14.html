@@ -1,0 +1,27 @@
+<div class="col-md-7">
+
+    <form name="formulario" ng-submit="guardar_datos('14')" novalidate="novalidate">
+        <div class="form-group">
+            <label for="nombre" class="control-label">¿Tienes dificultades para encontrar disfrutar en las cosas que solían interesarte? </label>
+            <select class="form-control" id="Pr1" ng-model="formData.D14" required="required">
+                <option value="0.25">No tengo dificultades para encontrar disfrutar </option>
+                <option value="0.5">A veces tengo dificultades  </option>
+                <option value="0.75">Con frecuencia tengo dificultades </option>
+                <option value="1.0">Siempre tengo dificultades   </option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="edad" class="control-label">¿Tienes miedo a perder el control o volverte loco/a debido a la ansiedad?</label>
+            <select class="form-control" id="Pr2" ng-model="formData.A14" required="required">
+                <option value="0.25">Casi nunca tengo miedo a perder el control o volverte loco/a </option>
+                <option value="0.5">Ocasionalmente tengo miedo a perder el control o volverte loco/a  </option>
+                <option value="0.75">Con frecuencia tengo miedo a perder el control o volverte loco /a   </option>
+                <option value="1.0">Siempre tengo miedo a perder el control o volverte loco/a  </option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary"> Guardar</button>
+    </form>
+
+</div>

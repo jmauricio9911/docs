@@ -1,0 +1,28 @@
+<div class="col-md-7">
+
+    <form name="formulario" ng-submit="guardar_datos('9')" novalidate="novalidate">
+
+        <div class="form-group">
+            <label for="nombre" class="control-label">¿Tienes pensamientos recurrentes sobre la muerte o el suicidio? </label>
+            <select class="form-control" id="Pr1" ng-model="formData.D9" required="required">
+                <option value="0.25">Nunca tengo esos pensamientos </option>
+                <option value="0.5">Ocasionalmente tengo esos pensamientos  </option>
+                <option value="0.75">Con frecuencia tengo esos pensamientos  </option>
+                <option value="1.0">Siempre tengo esos pensamientos   </option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="edad" class="control-label">¿Experimentas dificultades para respirar o sensación de falta de aire en momentos de ansiedad? </label>
+            <select class="form-control" id="Pr2" ng-model="formData.A9" required="required">
+                <option value="0.25">Casi nunca tengo dificultades para respirar </option>
+                <option value="0.5">Ocasionalmente tengo dificultades para respirar  </option>
+                <option value="0.75">Con frecuencia tengo dificultades para respirar  </option>
+                <option value="1.0">Siempre tengo dificultades para respirar </option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary"> Guardar</button>
+    </form>
+
+</div>

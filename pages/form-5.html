@@ -1,0 +1,28 @@
+<div class="col-md-7">
+
+    <form name="formulario" ng-submit="guardar_datos('5')" novalidate="novalidate">
+
+        <div class="form-group">
+            <label for="nombre" class="control-label">¿Has perdido el interés o el placer en actividades que solían gustarte?</label>
+            <select class="form-control" id="Pr1" ng-model="formData.D5" required="required">
+                <option value="0.25">No he perdido interés ni placer en mis actividades  </option>
+                <option value="0.5">Ocasionalmente he perdido interés o placer </option>
+                <option value="0.75">Con frecuencia he perdido interés o placer </option>
+                <option value="1.0">Siempre he perdido interés o placer  </option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="edad" class="control-label">¿Te sientes irritado/ao impaciente con facilidad?</label>
+            <select class="form-control" id="Pr2" ng-model="formData.A5" required="required">
+                <option value="0.25">Casi nunca me siento irritado/a impaciente</option>
+                <option value="0.5">Ocasionalmente me siento irritado/a impaciente </option>
+                <option value="0.75">Con frecuencia me siento irritado/a impaciente  </option>
+                <option value="1.0">Siempre me siento irritado/a impaciente</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary"> Guardar</button>
+    </form>
+
+</div>

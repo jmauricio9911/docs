@@ -1,0 +1,28 @@
+<div class="col-md-7">
+
+    <form name="formulario" ng-submit="guardar_datos('1')" novalidate="novalidate">
+
+        <div class="form-group">
+            <label for="nombre" class="control-label">¿Con qué frecuencia te sientes triste o deprimido/a?</label>
+            <select class="form-control" id="Pr1" ng-model="formData.D1" required="required">
+                <option value=""></option>
+                <option value="0.25">Casi nunca </option>
+                <option value="0.5">Ocasionalmente </option>
+                <option value="0.75">Frecuentemente </option>
+                <option value="1.0">Siempre </option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="edad" class="control-label">¿Con qué frecuencia te sientes nervioso/ao inquieto/a?</label>
+            <select class="form-control" id="Pr2" ng-model="formData.A1" required="required">
+                <option value="0.25">Casi nunca</option>
+                <option value="0.5">Ocasionalmente </option>
+                <option value="0.75">Frecuentemente </option>
+                <option value="1.0">Siempre </option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary"> Guardar</button>
+    </form>
+
+</div>

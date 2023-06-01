@@ -1,0 +1,27 @@
+<div class="col-md-7">
+
+    <form name="formulario" ng-submit="guardar_datos('11')" novalidate="novalidate">
+        <div class="form-group">
+            <label for="nombre" class="control-label">¿Sientes una disminución notable en tu capacidad para tomar decisiones o pensar con claridad?</label>
+            <select class="form-control" id="Pr1" ng-model="formData.D11" required="required">
+                <option value="0.25">No tengo dificultades para tomar decisiones o pensar con claridad </option>
+                <option value="0.5">A veces tengo dificultades</option>
+                <option value="0.75">Con frecuencia tengo dificultades  </option>
+                <option value="1.0">Siempre tengo dificultades  </option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="edad" class="control-label">¿Experimentas episodios de pánico arrepentidos o ataques de ansiedad intensa? </label>
+            <select class="form-control" id="Pr2" ng-model="formData.A11" required="required">
+                <option value="0.25">Nunca experimento episodios de pánico o ataques de ansiedad </option>
+                <option value="0.5">Ocasionalmente experimento episodios de pánico o ataques de ansiedad</option>
+                <option value="0.75">Con frecuencia experimento episodios de pánico o ataques de ansiedad</option>
+                <option value="1.0">Siempre experimento episodios de panico o ataques de ansiedad </option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary"> Guardar</button>
+    </form>
+
+</div>

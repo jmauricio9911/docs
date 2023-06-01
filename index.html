@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="ejemplosApp">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Test</title>
+
+
+    <!-- Incluir Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Incluir AngularJS -->
+    <script src="js/lib/angular.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@latest/dist/Chart.min.js"></script>
+
+    <script src="js/app.js"></script>
+
+</head>
+
+<body ng-controller="mainCtrl">
+
+    <div ng-include="Header"></div>
+
+    <!--Content starts-->
+    <div class="container">
+        <div class="row">
+            <div ng-include="formulario"  ng-show="formulario_final"></div>
+            <!-- <div ng-include="pages.Form_2" ng-show="formularios.Form_2"></div> -->
+            <div class="col-md-7" ng-show="grafica">
+                <canvas id="grafica"></canvas>
+            </div>
+        </div>
+    </div>
+    <!--Content ends-->
+
+</body>
+
+</html>

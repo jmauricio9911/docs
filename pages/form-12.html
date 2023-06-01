@@ -1,0 +1,27 @@
+<div class="col-md-7">
+
+    <form name="formulario" ng-submit="guardar_datos('12')" novalidate="novalidate">
+        <div class="form-group">
+            <label for="nombre" class="control-label">¿Experimentas sentimientos de desesperanza o desesperación?</label>
+            <select class="form-control" id="Pr1" ng-model="formData.D12" required="required">
+                <option value="0.25">Casi nunca siento desesperanza o desesperación   </option>
+                <option value="0.5">Ocasionalmente me siento cansado/a  </option>
+                <option value="0.75">Con frecuencia siento desesperanza o desesperación </option>
+                <option value="1.0">Siempre siento desesperanza o desesperación   </option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="edad" class="control-label">¿Te sientes agotado/ao con falta de energía debido a la ansiedad?</label>
+            <select class="form-control" id="Pr2" ng-model="formData.A12" required="required">
+                <option value="0.25">Casi nunca me siento agotado/año sin energía</option>
+                <option value="0.5">Ocasionalmente me siento agotado/año sin energía  </option>
+                <option value="0.75">Con frecuencia me siento agotado/año sin energía  </option>
+                <option value="1.0">Siempre me siento agotado /año sin energía </option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary"> Guardar</button>
+    </form>
+
+</div>

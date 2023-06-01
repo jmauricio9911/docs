@@ -1,0 +1,28 @@
+<div class="col-md-7">
+
+    <form name="formulario" ng-submit="guardar_datos('13')" novalidate="novalidate">
+
+        <div class="form-group">
+            <label for="nombre" class="control-label">¿Ha experimentado cambios en tu libido o interés sexual? </label>
+            <select class="form-control" id="Pr1" ng-model="formData.D13" required="required">
+                <option value="0.25">No experimentó cambios en mi libido o interés sexual</option>
+                <option value="0.5">Ocasionalmente experimentó cambios leves   </option>
+                <option value="0.75">Experimento cambios moderados con frecuencia </option>
+                <option value="1.0">Experimento cambios significativos con frecuencia   </option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="edad" class="control-label">¿Experimentas dificultades para concentrarte o tener la mente en blanco debido a la ansiedad?</label>
+            <select class="form-control" id="Pr2" ng-model="formData.A13" required="required">
+                <option value="0.25">No tengo dificultades para concentrarme debido a la ansiedad </option>
+                <option value="0.5">A veces tengo dificultades para concentrarme </option>
+                <option value="0.75">Con frecuencia tengo dificultades para concentrarme   </option>
+                <option value="1.0">Siempre tengo dificultades para concentrarme </option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary"> Guardar</button>
+    </form>
+
+</div>

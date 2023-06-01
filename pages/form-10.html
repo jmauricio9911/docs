@@ -1,0 +1,28 @@
+<div class="col-md-7">
+
+    <form name="formulario" ng-submit="guardar_datos('10')" novalidate="novalidate">
+
+        <div class="form-group">
+            <label for="nombre" class="control-label">¿Te sientes irritable o agitado/a la mayor parte del tiempo? </label>
+            <select class="form-control" id="Pr1" ng-model="formData.D10" required="required">
+                <option value="0.25">Casi nunca me siento irritable o agitado/a   </option>
+                <option value="0.5">Ocasionalmente me siento irritable o agitado/a   </option>
+                <option value="0.75">Con frecuencia me siento irritable o agitado/a  </option>
+                <option value="1.0">Siempre me siento irritable o agitado/a   </option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="edad" class="control-label">¿Sientes que tus preocupaciones o miedos son excesivos o irracionales?</label>
+            <select class="form-control" id="Pr2" ng-model="formData.A10" required="required">
+                <option value="0.25">No considere que mis preocupaciones sean excesivas o irracionales </option>
+                <option value="0.5">A veces considere que mis preocupaciones sean excesivas o irracionales   </option>
+                <option value="0.75">Con frecuencia considere que mis preocupaciones sean excesivas o irracionales </option>
+                <option value="1.0">Siempre Considero que mis sospechas son excesivas o irracionales </option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary"> Guardar</button>
+    </form>
+
+</div>

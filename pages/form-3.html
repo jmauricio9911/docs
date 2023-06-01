@@ -1,0 +1,27 @@
+<div class="col-md-7">
+
+    <form name="formulario" ng-submit="guardar_datos('3')" novalidate="novalidate">
+
+        <div class="form-group">
+            <label for="nombre" class="control-label">¿Experimentas cambios significativos en tu apetito o peso sin motivo aparente?</label>
+            <select class="form-control" id="Pr1" ng-model="formData.D3" required="required">
+                <option value="0.25">No, mi apetito y peso son estables</option>
+                <option value="0.5">Ocasionalmente me siento cansado/a</option>
+                <option value="0.75">Con frecuencia me siento cansado/a</option>
+                <option value="1.0">Siempre me siento cansado/a</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="edad" class="control-label">¿Sientes tensión muscular o rigidez en tu cuerpo de manera recurrente? </label>
+            <select class="form-control" id="Pr2" ng-model="formData.A3" required="required">
+                <option value="0.25">Casi nunca siento tensión muscular </option>
+                <option value="0.5">Ocasionalmente siento tensión muscular  </option>
+                <option value="0.75"> Con frecuencia siento tensión muscular  </option>
+                <option value="1.0">Siempre siento tensión muscular  </option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary"> Guardar</button>
+    </form>
+
+</div>
